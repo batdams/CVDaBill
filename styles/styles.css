@@ -1,0 +1,122 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ajuste la taille totale en tenant compte des padding et border */
+}
+
+/* Styles pour les écrans d'ordinateurs de bureau */
+@media screen and (min-width: 1025px) {
+  header {
+    height: 100vh;
+    background-color: #DAD6D1;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin: 15px;
+    margin-bottom: 0px;
+  }
+  header nav {
+    margin: 15px;
+  }
+  header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+  header nav ul .home {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 80px;
+  }
+  header nav ul .home li a {
+    text-decoration: none;
+  }
+  header nav ul .home li img {
+    height: 75px;
+  }
+  header nav ul .contactCV {
+    display: flex;
+    margin-top: 40px;
+    margin-right: 100px;
+    align-items: center;
+    font-size: 16px;
+    font-family: Cascadia Mono;
+    font-weight: 400;
+  }
+  header nav ul .contactCV li {
+    padding-right: 10px;
+  }
+  header nav ul .contactCV li a {
+    text-decoration: none;
+    color: #3C5233;
+  }
+  header section {
+    margin-top: 50px;
+  }
+  header section .titleJob {
+    display: flex;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+  }
+  header section .titleJob h2 {
+    font-size: 22px;
+    font-family: Cascadia Mono;
+    font-weight: 600;
+    color: #162C2F;
+    margin-bottom: 0;
+  }
+  header section .titleJob h1 {
+    font-size: 121px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: #162C2F;
+    margin-top: 0;
+  }
+  header section .titleJob img {
+    width: auto;
+  }
+  header aside {
+    margin-top: 150px;
+    text-align: center;
+    font-family: Cascadia Mono;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3C5233;
+  }
+}
+main {
+  background-color: #E8E6E5;
+  margin: 15px;
+  margin-top: 0px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+main .about {
+  width: 75%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+main .about h2 {
+  font-size: 22px;
+  font-family: Cascadia Mono;
+  font-weight: 600;
+  color: #162C2F;
+  margin-bottom: 50px;
+}
+main .about .aboutFirstPart {
+  font-size: 32px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #162C2F;
+  margin-bottom: 10px;
+}
+main .about .aboutSecondPart {
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #162C2F;
+}
+
+body {
+  background-color: #162C2F;
+}/*# sourceMappingURL=styles.css.map */

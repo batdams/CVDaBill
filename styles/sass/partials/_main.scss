@@ -1,0 +1,31 @@
+main {
+    background-color: $color5;
+    margin: 15px;
+    margin-top: 0px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    .about {
+        width: 75%;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        h2 {
+            font-size: 22px;
+            font-family: $textFont1;
+            font-weight: 600;
+            color: $color2;
+            margin-bottom: 50px;
+        }
+        .aboutFirstPart {
+            font-size: 32px;
+            font-family: $textFont2;
+            color: $color2;
+            margin-bottom: 10px;
+        }
+        .aboutSecondPart {
+            font-size: 16px;
+            font-family: $textFont2;
+            color: $color2;
+        }
+    }
+}
