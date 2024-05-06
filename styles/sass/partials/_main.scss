@@ -64,6 +64,16 @@ main {
         }
         .skills {
             display: flex;
+            justify-content: space-between;
+            .frontSkills, .backSkills{
+                display: flex;
+            }
+        }
+        .educationList, .softSkillsList {
+            display: flex;
+            div {
+                margin-right: 10px;
+            }
         }
     }
 }

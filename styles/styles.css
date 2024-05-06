@@ -154,6 +154,16 @@ main .skillsEducation h2 {
 }
 main .skillsEducation .skills {
   display: flex;
+  justify-content: space-between;
+}
+main .skillsEducation .skills .frontSkills, main .skillsEducation .skills .backSkills {
+  display: flex;
+}
+main .skillsEducation .educationList, main .skillsEducation .softSkillsList {
+  display: flex;
+}
+main .skillsEducation .educationList div, main .skillsEducation .softSkillsList div {
+  margin-right: 10px;
 }
 
 body {
