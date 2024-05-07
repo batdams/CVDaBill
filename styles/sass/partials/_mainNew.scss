@@ -1,0 +1,135 @@
+// Mixin pour les styles communs de la section "About"
+@mixin about-styles {
+    background-color: $color5;
+    width: 75%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h2 {
+        font-size: 22px;
+        font-family: $textFont1;
+        font-weight: 600;
+        color: $color2;
+        margin-bottom: 50px;
+    }
+    .aboutFirstPart {
+        font-size: 32px;
+        font-family: $textFont2;
+        color: $color2;
+        margin-bottom: 10px;
+    }
+    .aboutSecondPart {
+        font-size: 16px;
+        font-family: $textFont2;
+        color: $color2;
+        margin-bottom: 30px;
+    }
+    .contact {
+        display: flex;
+        justify-content: end;
+        button {
+            display: flex;
+            margin-right: 10px;
+            border: solid 1px $color7;
+            border-radius: 50px;
+            padding: 12px;
+            background-color: $color7;
+            color: $color5;
+            font-size: 18px;
+            font-family: $textFont2;
+            text-align: center;
+            img {
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+// Mixin pour les styles communs de la section "SkillsEducation"
+@mixin skills-education-styles {
+    padding-top: 100px;
+    width: 75%;
+    margin: auto;
+    color: $color5;
+    h2 {
+        font-size: 64px;
+        font-family: $textFont1;
+        font-weight: 400;
+    }
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        .frontSkills, .backSkills{
+            display: flex;
+        }
+    }
+    .educationList, .softSkillsList {
+        display: flex;
+        div {
+            margin-right: 10px;
+        }
+    }
+}
+
+// Styles pour les écrans d'ordinateurs de bureau et les écrans de taille moyenne
+@media screen and (min-width: 768px) {
+    main {
+        margin: 15px;
+        margin-top: 0px;
+        .aboutWrap {
+            box-sizing: border-box;
+            background-color: $color5;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            .about {
+                @include about-styles;
+            }
+        }
+        .skillsEducation {
+            @include skills-education-styles;
+        }
+    }
+}
+
+// Styles pour les écrans de téléphone et les écrans de taille moyenne
+@media screen and (max-width: 1200px) {
+    main {
+        margin: 15px;
+        margin-top: 0px;
+        .aboutWrap {
+            box-sizing: border-box;
+            background-color: $color5;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            .about {
+                border-bottom-left-radius: 100px;
+                border-bottom-right-radius: 100px;
+                @include about-styles;
+                h2 {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+                .aboutFirstPart {
+                    font-size: 20px;
+                }
+                .aboutSecondPart {
+                    font-size: 14px;
+                }
+                .contact {
+                    justify-content: center;
+                    button {
+                        margin: 2px;
+                        padding: 5px;
+                        font-size: 10px;
+                        img {
+                            padding-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .skillsEducation {
+            @include skills-education-styles;
+        }
+    }
+}

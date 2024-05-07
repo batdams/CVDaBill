@@ -1,0 +1,248 @@
+// Réinitilisation des marges du navigateur
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ajuste la taille totale en tenant compte des padding et border */
+}
+/* Styles pour les écrans d'ordinateurs de bureau */
+@media screen and (min-width: 1200px) {
+    header {
+        min-height: 100vh;
+        background-color: #DAD6D1;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        margin: 15px;
+        margin-bottom: 0px;
+        nav {
+            padding: 0px 80px 0px 80px;
+            ul {
+                //box-sizing: border-box;
+                display: flex;
+                list-style-type: none;
+                justify-content: space-between;
+                .home{
+                    display: flex;
+                    margin-top: 40px;
+                    li {
+                        a {
+                            text-decoration: none;
+                        }
+                        img {
+                            height: 75px;
+                        }
+                    }
+                }
+                .contactCV {
+                    display: flex;
+                    margin-top: 40px;
+                    align-items: center;
+                    font-size: 16px;
+                    font-family: $textFont1;
+                    font-weight: 400;
+                    li {
+                        padding-right: 10px;
+                        a {
+                            text-decoration: none;
+                            color: $color1;
+                        }
+                    }
+                }
+            }
+        }
+        section {
+            padding: 50px 80px 0px 80px;
+            .titleJob {
+                display: flex;
+                justify-content: space-between;
+                h2 {
+                    font-size: 22px;
+                    font-family: $textFont1;
+                    font-weight: 600;
+                    color: $color2;
+                    margin-bottom: 0;
+                }
+                h1{
+                    font-size: 121px;
+                    font-family: $textFont2;
+                    font-weight: 700;
+                    color: $color2;
+                    margin-top: 0;
+                }
+                display: flex;
+                align-items: center;
+                img {
+                    width: auto;
+                }
+            }
+        }
+        aside {
+            margin-top: 100px;
+            padding-bottom: 50px;
+            text-align: center;
+            font-family: $textFont1;
+            font-size: 14px;
+            font-weight: 500;
+            color: $color1;
+        }
+    }
+}
+// Styles pour les écrans mobiles
+@media screen and (min-width: 768px) {
+    header {
+        min-height: 100vh;
+        background-color: #DAD6D1;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        margin: 15px;
+        margin-bottom: 0px;
+        nav {
+            padding: 0px 80px 0px 80px;
+            ul {
+                //box-sizing: border-box;
+                display: flex;
+                list-style-type: none;
+                justify-content: space-between;
+                .home{
+                    display: flex;
+                    margin-top: 40px;
+                    li {
+                        a {
+                            text-decoration: none;
+                        }
+                        img {
+                            height: 75px;
+                        }
+                    }
+                }
+                .contactCV {
+                    display: flex;
+                    margin-top: 40px;
+                    align-items: center;
+                    font-size: 16px;
+                    font-family: $textFont1;
+                    font-weight: 400;
+                    li {
+                        padding-right: 10px;
+                        a {
+                            text-decoration: none;
+                            color: $color1;
+                        }
+                    }
+                }
+            }
+        }
+        section {
+            padding: 50px 80px 0px 80px;
+            .titleJob {
+                display: flex;
+                justify-content: space-between;
+                h2 {
+                    font-size: 22px;
+                    font-family: $textFont1;
+                    font-weight: 600;
+                    color: $color2;
+                    margin-bottom: 0;
+                }
+                h1{
+                    font-size: 50px;
+                    font-family: $textFont2;
+                    font-weight: 700;
+                    color: $color2;
+                    margin-top: 0;
+                }
+                align-items: center;
+                img {
+                    width: auto;
+                }
+            }
+        }
+        aside {
+            margin-top: 100px;
+            padding-bottom: 50px;
+            text-align: center;
+            font-family: $textFont1;
+            font-size: 14px;
+            font-weight: 500;
+            color: $color1;
+        }
+    }
+}
+// Styles pour les petits écrans
+@media screen and (max-width: 768px) {
+    header {
+        min-height: 100vh;
+        background-color: #DAD6D1;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        margin: 15px;
+        margin-bottom: 0px;
+        nav {
+            padding: 0px 80px 0px 80px;
+            ul {
+                //box-sizing: border-box;
+                display: flex;
+                list-style-type: none;
+                justify-content: space-between;
+                .home{
+                    display: flex;
+                    margin-top: 40px;
+                    li {
+                        a {
+                            text-decoration: none;
+                        }
+                        img {
+                            height: 75px;
+                        }
+                    }
+                }
+                .contactCV {
+                    display: flex;
+                    margin-top: 40px;
+                    align-items: center;
+                    font-size: 16px;
+                    font-family: $textFont1;
+                    font-weight: 400;
+                    li {
+                        padding-right: 10px;
+                        a {
+                            text-decoration: none;
+                            color: $color1;
+                        }
+                    }
+                }
+            }
+        }
+        section {
+            padding: 20px 80px 0px 80px;
+            text-align: center;
+            .titleJob {
+                h2 {
+                    font-size: 22px;
+                    font-family: $textFont1;
+                    font-weight: 600;
+                    color: $color2;
+                    margin-bottom: 10px;
+                }
+                h1{
+                    font-size: 45px;
+                    font-family: $textFont2;
+                    font-weight: 700;
+                    color: $color2;
+                    margin-bottom: 10px;
+                }
+                img {
+                    width: 150px;
+                }
+            }
+        }
+        aside {
+            margin-top: 50px;
+            padding-bottom: 10px;
+            text-align: center;
+            font-family: $textFont1;
+            font-size: 10px;
+            font-weight: 500;
+            color: $color1;
+        }
+    }
+}

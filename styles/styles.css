@@ -5,8 +5,7 @@
   box-sizing: border-box; /* Ajuste la taille totale en tenant compte des padding et border */
 }
 
-/* Styles pour les écrans d'ordinateurs de bureau */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1200px) {
   header {
     min-height: 100vh;
     background-color: #DAD6D1;
@@ -16,7 +15,7 @@
     margin-bottom: 0px;
   }
   header nav {
-    margin: 15px;
+    padding: 0px 80px 0px 80px;
   }
   header nav ul {
     display: flex;
@@ -26,7 +25,6 @@
   header nav ul .home {
     display: flex;
     margin-top: 40px;
-    margin-left: 80px;
   }
   header nav ul .home li a {
     text-decoration: none;
@@ -37,7 +35,6 @@
   header nav ul .contactCV {
     display: flex;
     margin-top: 40px;
-    margin-right: 100px;
     align-items: center;
     font-size: 16px;
     font-family: Cascadia Mono;
@@ -51,11 +48,11 @@
     color: #3C5233;
   }
   header section {
-    margin-top: 50px;
+    padding: 50px 80px 0px 80px;
   }
   header section .titleJob {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     display: flex;
     align-items: center;
   }
@@ -81,91 +78,382 @@
     padding-bottom: 50px;
     text-align: center;
     font-family: Cascadia Mono;
+    font-size: 22px;
+    font-weight: 500;
+    color: #3C5233;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  header {
+    min-height: 100vh;
+    background-color: #DAD6D1;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin: 15px;
+    margin-bottom: 0px;
+  }
+  header nav {
+    padding: 0px 80px 0px 80px;
+  }
+  header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+  header nav ul .home {
+    display: flex;
+    margin-top: 40px;
+  }
+  header nav ul .home li a {
+    text-decoration: none;
+  }
+  header nav ul .home li img {
+    height: 75px;
+  }
+  header nav ul .contactCV {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    font-size: 16px;
+    font-family: Cascadia Mono;
+    font-weight: 400;
+  }
+  header nav ul .contactCV li {
+    padding-right: 10px;
+  }
+  header nav ul .contactCV li a {
+    text-decoration: none;
+    color: #3C5233;
+  }
+  header section {
+    padding: 50px 80px 0px 80px;
+  }
+  header section .titleJob {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  header section .titleJob h2 {
+    font-size: 22px;
+    font-family: Cascadia Mono;
+    font-weight: 600;
+    color: #162C2F;
+    margin-bottom: 0;
+  }
+  header section .titleJob h1 {
+    font-size: 121px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: #162C2F;
+    margin-top: 0;
+  }
+  header section .titleJob img {
+    width: auto;
+  }
+  header section .titleJob h1 {
+    font-size: 70px;
+  }
+  header section .titleJob img {
+    width: 200px;
+  }
+  header aside {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: Cascadia Mono;
+    font-size: 22px;
+    font-weight: 500;
+    color: #3C5233;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    min-height: 100vh;
+    background-color: #DAD6D1;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin: 15px;
+    margin-bottom: 0px;
+  }
+  header nav {
+    padding: 0px 80px 0px 80px;
+  }
+  header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+  header nav ul .home {
+    display: flex;
+    margin-top: 40px;
+  }
+  header nav ul .home li a {
+    text-decoration: none;
+  }
+  header nav ul .home li img {
+    height: 75px;
+  }
+  header nav ul .contactCV {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    font-size: 16px;
+    font-family: Cascadia Mono;
+    font-weight: 400;
+  }
+  header nav ul .contactCV li {
+    padding-right: 10px;
+  }
+  header nav ul .contactCV li a {
+    text-decoration: none;
+    color: #3C5233;
+  }
+  header section {
+    padding: 20px 80px 0px 80px;
+    text-align: center;
+  }
+  header section .titleJob h2 {
+    font-size: 22px;
+    font-family: Cascadia Mono;
+    font-weight: 600;
+    color: #162C2F;
+    margin-bottom: 10px;
+  }
+  header section .titleJob h1 {
+    font-size: 45px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: #162C2F;
+    margin-bottom: 10px;
+  }
+  header section .titleJob img {
+    width: 150px;
+  }
+  header aside {
+    margin-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: Cascadia Mono;
     font-size: 14px;
     font-weight: 500;
     color: #3C5233;
   }
 }
-main {
-  margin: 15px;
-  margin-top: 0px;
+/* Styles pour les écrans d'ordinateurs de bureau */
+@media screen and (min-width: 1200px) {
+  main {
+    margin: 15px;
+    margin-top: 0px;
+  }
+  main .aboutWrap {
+    box-sizing: border-box;
+    background-color: #E8E6E5;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  main .aboutWrap .about {
+    background-color: #E8E6E5;
+    width: 75%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  main .aboutWrap .about h2 {
+    font-size: 22px;
+    font-family: Cascadia Mono;
+    font-weight: 600;
+    color: #162C2F;
+    margin-bottom: 50px;
+  }
+  main .aboutWrap .about .aboutFirstPart {
+    font-size: 32px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #162C2F;
+    margin-bottom: 10px;
+  }
+  main .aboutWrap .about .aboutSecondPart {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #162C2F;
+    margin-bottom: 30px;
+  }
+  main .aboutWrap .about .contact {
+    display: flex;
+    justify-content: end;
+  }
+  main .aboutWrap .about .contact button {
+    display: flex;
+    margin-right: 10px;
+    border: solid 1px #6F732F;
+    border-radius: 50px;
+    padding: 12px;
+    background-color: #6F732F;
+    color: #E8E6E5;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+  }
+  main .aboutWrap .about .contact button img {
+    padding-right: 10px;
+  }
+  main .skillsEducation {
+    padding-top: 100px;
+    width: 75%;
+    margin: auto;
+    color: #E8E6E5;
+  }
+  main .skillsEducation h2 {
+    font-size: 64px;
+    font-family: Cascadia Mono;
+    font-weight: 400;
+  }
+  main .skillsEducation h4 {
+    padding: 50px 0px 20px 0px;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #9E9C9A;
+    font-weight: 600;
+  }
+  main .skillsEducation h4 span {
+    color: #95995C;
+  }
+  main .skillsEducation .skills {
+    display: flex;
+    justify-content: space-between;
+  }
+  main .skillsEducation .skills .frontSkills, main .skillsEducation .skills .backSkills, main .skillsEducation .skills .mobileSkills {
+    display: flex;
+  }
+  main .skillsEducation .skills .frontSkills div, main .skillsEducation .skills .backSkills div, main .skillsEducation .skills .mobileSkills div {
+    display: flex;
+    background-color: #162C2F;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+  }
+  main .skillsEducation .skills .frontSkills div span, main .skillsEducation .skills .backSkills div span, main .skillsEducation .skills .mobileSkills div span {
+    padding: 10px;
+  }
+  main .skillsEducation .educationList, main .skillsEducation .softSkillsList {
+    display: flex;
+  }
+  main .skillsEducation .educationList div, main .skillsEducation .softSkillsList div {
+    display: flex;
+    background-color: #162C2F;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+  }
+  main .skillsEducation .educationList div span, main .skillsEducation .softSkillsList div span {
+    padding: 10px;
+  }
 }
-main .aboutWrap {
-  box-sizing: border-box;
-  background-color: #E8E6E5;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
+/* Styles pour les écrans de téléphone */
+@media screen and (max-width: 1200px) {
+  main {
+    margin: 15px;
+    margin-top: 0px;
+  }
+  main .aboutWrap {
+    box-sizing: border-box;
+    background-color: #E8E6E5;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  main .aboutWrap .about {
+    background-color: #E8E6E5;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 75%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  main .aboutWrap .about h2 {
+    font-size: 18px;
+    font-family: Cascadia Mono;
+    font-weight: 600;
+    color: #162C2F;
+    margin-bottom: 20px;
+  }
+  main .aboutWrap .about .aboutFirstPart {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #162C2F;
+    margin-bottom: 10px;
+  }
+  main .aboutWrap .about .aboutSecondPart {
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #162C2F;
+    margin-bottom: 30px;
+  }
+  main .aboutWrap .about .contact {
+    display: flex;
+    justify-content: center;
+  }
+  main .aboutWrap .about .contact button {
+    display: flex;
+    border: solid 1px #6F732F;
+    border-radius: 50px;
+    margin: 2px;
+    padding: 5px;
+    background-color: #6F732F;
+    color: #E8E6E5;
+    font-size: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+  }
+  main .aboutWrap .about .contact button img {
+    padding-right: 5px;
+  }
+  main .skillsEducation {
+    padding-top: 100px;
+    margin: auto;
+    color: #E8E6E5;
+    text-align: center;
+  }
+  main .skillsEducation h2 {
+    font-size: 28px;
+    font-family: Cascadia Mono;
+    font-weight: 400;
+  }
+  main .skillsEducation h4 {
+    padding: 50px 0px 20px 0px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #9E9C9A;
+    font-weight: 600;
+  }
+  main .skillsEducation h4 span {
+    color: #95995C;
+  }
+  main .skillsEducation .skills {
+    display: flex;
+    justify-content: space-between;
+  }
+  main .skillsEducation .skills .frontSkills div, main .skillsEducation .skills .backSkills div, main .skillsEducation .skills .mobileSkills div {
+    display: flex;
+    background-color: #162C2F;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+  }
+  main .skillsEducation .skills .frontSkills div span, main .skillsEducation .skills .backSkills div span, main .skillsEducation .skills .mobileSkills div span {
+    padding: 10px;
+  }
+  main .skillsEducation .educationList div, main .skillsEducation .softSkillsList div {
+    display: flex;
+    background-color: #162C2F;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+  }
+  main .skillsEducation .educationList div span, main .skillsEducation .softSkillsList div span {
+    padding: 10px;
+  }
 }
-main .aboutWrap .about {
-  background-color: #E8E6E5;
-  width: 75%;
-  margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-main .aboutWrap .about h2 {
-  font-size: 22px;
-  font-family: Cascadia Mono;
-  font-weight: 600;
-  color: #162C2F;
-  margin-bottom: 50px;
-}
-main .aboutWrap .about .aboutFirstPart {
-  font-size: 32px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #162C2F;
-  margin-bottom: 10px;
-}
-main .aboutWrap .about .aboutSecondPart {
-  font-size: 16px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #162C2F;
-  margin-bottom: 30px;
-}
-main .aboutWrap .about .contact {
-  display: flex;
-  justify-content: end;
-}
-main .aboutWrap .about .contact button {
-  display: flex;
-  margin-right: 10px;
-  border: solid 1px #6F732F;
-  border-radius: 50px;
-  padding: 12px;
-  background-color: #6F732F;
-  color: #E8E6E5;
-  font-size: 18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-align: center;
-}
-main .aboutWrap .about .contact button img {
-  padding-right: 10px;
-}
-main .skillsEducation {
-  padding-top: 100px;
-  width: 75%;
-  margin: auto;
-  color: #E8E6E5;
-}
-main .skillsEducation h2 {
-  font-size: 64px;
-  font-family: Cascadia Mono;
-  font-weight: 400;
-}
-main .skillsEducation .skills {
-  display: flex;
-  justify-content: space-between;
-}
-main .skillsEducation .skills .frontSkills, main .skillsEducation .skills .backSkills {
-  display: flex;
-}
-main .skillsEducation .educationList, main .skillsEducation .softSkillsList {
-  display: flex;
-}
-main .skillsEducation .educationList div, main .skillsEducation .softSkillsList div {
-  margin-right: 10px;
-}
-
 body {
-  background-color: #162C2F;
+  background-color: #132326;
 }/*# sourceMappingURL=styles.css.map */
