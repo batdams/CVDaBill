@@ -105,6 +105,39 @@
                 }
             }
         }
+        .contact2 {
+            background: url("../../../pictures/cercle.svg");
+            -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+            background-size: cover;
+            padding-top: 100px;
+            width: 75%;
+            text-align: center;
+            margin: auto;
+            color: $color5;
+            .questions {
+                font-size: 16px;
+                font-family: $textFont2;
+                color:$color4;
+            }
+            .contactMe {
+                font-size: 64px;
+                font-family: $textFont1;
+                color:$color5;
+            }
+            .contactChoices {
+                button {
+                    border: solid 2px $color7;
+                    padding: 10px;
+                    margin: 5px;
+                    border-radius: 50px;
+                    background-color: $color2;
+                    color: $color5;
+                    font-size: 18px;
+                    font-family: $textFont2;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
@@ -214,6 +247,9 @@
                     }
                 }
             }
+        }
+        .contact {
+            
         }
     }
 }
