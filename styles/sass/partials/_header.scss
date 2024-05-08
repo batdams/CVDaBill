@@ -7,7 +7,6 @@
 
 // Mixin pour les styles communs du header
 @mixin header-styles {
-    min-height: 100vh;
     background-color: #DAD6D1;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
@@ -95,6 +94,7 @@
 @media screen and (min-width: 1200px) {
     header {
         @include header-styles;
+        min-height: 100vh;
         nav {
             @include nav-styles;
         }
@@ -161,7 +161,7 @@
         }
         aside {
             margin-top: 50px;
-            padding-bottom: 10px;
+            padding-bottom: 50px;
             text-align: center;
             font-family: $textFont1;
             font-size: 14px;

@@ -7,12 +7,12 @@
 
 @media screen and (min-width: 1200px) {
   header {
-    min-height: 100vh;
     background-color: #DAD6D1;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     margin: 15px;
     margin-bottom: 0px;
+    min-height: 100vh;
   }
   header nav {
     padding: 0px 80px 0px 80px;
@@ -85,7 +85,6 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   header {
-    min-height: 100vh;
     background-color: #DAD6D1;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
@@ -169,7 +168,6 @@
 }
 @media screen and (max-width: 768px) {
   header {
-    min-height: 100vh;
     background-color: #DAD6D1;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
@@ -232,7 +230,7 @@
   }
   header aside {
     margin-top: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     text-align: center;
     font-family: Cascadia Mono;
     font-size: 14px;
@@ -482,6 +480,36 @@
   }
   main .skillsEducation .educationList div span, main .skillsEducation .softSkillsList div span {
     padding: 10px;
+  }
+  main .contact2 {
+    background: url("../../../pictures/cercle.svg"); /* pour anciens Chrome et Safari */
+    background-size: cover;
+    padding-top: 100px;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    color: #E8E6E5;
+  }
+  main .contact2 .questions {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #9E9C9A;
+  }
+  main .contact2 .contactMe {
+    font-size: 64px;
+    font-family: Cascadia Mono;
+    color: #E8E6E5;
+  }
+  main .contact2 .contactChoices button {
+    border: solid 2px #6F732F;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50px;
+    background-color: #162C2F;
+    color: #E8E6E5;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
   }
 }
 footer {
