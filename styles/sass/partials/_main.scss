@@ -1,98 +1,84 @@
-/* Styles pour les écrans d'ordinateurs de bureau */
-@media screen and (min-width: 1200px) {
-    main {
-        margin: 15px;
-        margin-top: 0px;
-        .aboutWrap {
-            box-sizing: border-box;
+
+// Commun pour les écrans de bureau et les téléphones
+main {
+    margin: 15px;
+    margin-top: 0px;
+    .aboutWrap {
+        box-sizing: border-box;
+        background-color: $color5;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        .about {
             background-color: $color5;
+            width: 75%;
+            margin: auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
             border-bottom-left-radius: 100px;
             border-bottom-right-radius: 100px;
-            .about {
-                background-color: $color5;
-                width: 75%;
-                margin: auto;
-                padding-top: 50px;
-                padding-bottom: 50px;
-                h2 {
-                    font-size: 22px;
-                    font-family: $textFont1;
-                    font-weight: 600;
-                    color: $color2;
-                    margin-bottom: 50px;
+            h2 {
+                font-size: 22px;
+                font-family: $textFont1;
+                font-weight: 600;
+                color: $color2;
+                margin-bottom: 50px;
+            }
+            .aboutFirstPart {
+                font-size: 32px;
+                font-family: $textFont2;
+                color: $color2;
+                margin-bottom: 10px;
+            }
+            .aboutSecondPart {
+                font-size: 16px;
+                font-family: $textFont2;
+                color: $color2;
+                margin-bottom: 30px;
+            }
+            .contact {
+                display: flex;
+                :hover {
+                    cursor: pointer;
                 }
-                .aboutFirstPart {
-                    font-size: 32px;
-                    font-family: $textFont2;
-                    color: $color2;
-                    margin-bottom: 10px;
-                }
-                .aboutSecondPart {
-                    font-size: 16px;
-                    font-family: $textFont2;
-                    color: $color2;
-                    margin-bottom: 30px;
-                }
-                .contact {
+                button {
                     display: flex;
-                    justify-content: end;
-                    button {
-                        display: flex;
-                        margin-right: 10px;
-                        border: solid 1px $color7;
-                        border-radius: 50px;
-                        padding: 12px;
-                        background-color: $color7;
-                        color: $color5;
-                        font-size: 18px;
-                        font-family: $textFont2;
-                        text-align: center;
-                        img {
-                            padding-right: 10px;
-                        }
+                    border: solid 1px $color7;
+                    border-radius: 50px;
+                    background-color: $color7;
+                    color: $color5;
+                    font-family: $textFont2;
+                    text-align: center;
+                    }
+                    img {
+                        padding-right: 5px;
                     }
                 }
             }
         }
-        .skillsEducation {
-            padding-top: 100px;
-            width: 75%;
-            margin: auto;
-            color: $color5;
-            h2 {
-                font-size: 64px;
-                font-family: $textFont1;
-                font-weight: 400;
+    .skillsEducation {
+        padding-top: 100px;
+        margin: auto;
+        color: $color5;
+        text-align: center;
+        h2 {
+            font-size: 28px; // Modifier la taille de la police
+            font-family: $textFont1;
+            font-weight: 400;
+        }
+        h4 {
+            padding:50px 0px 20px 0px;
+            font-size: 15px; // Modifier la taille de la police
+            font-family: $textFont2;
+            color: $color4;
+            font-weight: 600;
+            span {
+                color: $color3;
             }
-            h4 {
-                padding:50px 0px 20px 0px;
-                font-size: 18px;
-                font-family: $textFont2;
-                color: $color4;
-                font-weight: 600;
-                span {
-                    color: $color3;
-                }
-            }
-            .skills {
-                display: flex;
-                justify-content: space-between;
-                .frontSkills, .backSkills, .mobileSkills{
-                    display: flex;
-                    div {
-                        display: flex;
-                        background-color: $color2;
-                        padding: 10px;
-                        margin: 3px;
-                        border-radius: 10px;
-                        span {
-                            padding: 10px;
-                        }
-                    }
-                }
-            }
-            .educationList, .softSkillsList {
-                display: flex;
+        }
+        .skills {
+            display: flex;
+            justify-content: space-between;
+            .frontSkills, .backSkills, .mobileSkills{
                 div {
                     display: flex;
                     background-color: $color2;
@@ -105,181 +91,155 @@
                 }
             }
         }
-        .contact2 {
-            background: url("../../../pictures/cercle.svg");
-            -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-            background-size: cover;
-            padding-top: 100px;
-            width: 75%;
-            text-align: center;
-            margin: auto;
-            color: $color5;
-            .questions {
-                font-size: 16px;
-                font-family: $textFont2;
-                color:$color4;
-            }
-            .contactMe {
-                font-size: 64px;
-                font-family: $textFont1;
-                color:$color5;
-            }
-            .contactChoices {
-                button {
-                    border: solid 2px $color7;
+        .educationList, .softSkillsList {
+            div {
+                display: flex;
+                background-color: $color2;
+                padding: 10px;
+                margin: 3px;
+                border-radius: 10px;
+                span {
                     padding: 10px;
-                    margin: 5px;
-                    border-radius: 50px;
-                    background-color: $color2;
-                    color: $color5;
-                    font-size: 18px;
-                    font-family: $textFont2;
-                    text-align: center;
+                }
+            }
+        }
+    }
+    .contact2 {
+        background: url("../../../pictures/cercle.svg");
+        -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+        background-size: cover;
+        padding-top: 100px;
+        width: 75%;
+        text-align: center;
+        margin: auto;
+        color: $color5;
+        .questions {
+            font-size: 16px;
+            font-family: $textFont2;
+            color:$color4;
+        }
+        .contactMe {
+            font-size: 64px;
+            font-family: $textFont1;
+            color:$color5;
+        }
+        .contactChoices {
+            display: flex;
+            justify-content: center;
+            :hover {
+                cursor: pointer;
+            }
+            button {
+                display: flex;
+                justify-content: center;
+                border: solid 2px $color7;
+                padding: 10px;
+                margin: 5px;
+                border-radius: 50px;
+                background-color: $color2;
+                color: $color5;
+                font-size: 18px;
+                font-family: $textFont2;
+                text-align: center;
+                img {
+                    padding-right: 5px;
                 }
             }
         }
     }
 }
 
-/* Styles pour les écrans de téléphone */
-@media screen and (max-width: 1200px) {
+// Styles spécifiques pour les écrans d'ordinateurs de bureau
+@media screen and (min-width: 1200px) {
     main {
-        margin: 15px;
-        margin-top: 0px;
         .aboutWrap {
-            box-sizing: border-box;
-            background-color: $color5;
-            border-bottom-left-radius: 100px;
-            border-bottom-right-radius: 100px;
             .about {
-                background-color: $color5;
-                border-bottom-left-radius: 100px;
-                border-bottom-right-radius: 100px;
-                width: 75%;
-                margin: auto;
-                padding-top: 50px;
-                padding-bottom: 50px;
                 h2 {
-                    font-size: 18px;
-                    font-family: $textFont1;
-                    font-weight: 600;
-                    color: $color2;
-                    margin-bottom: 20px;
+                    font-size: 22px;
+                    margin-bottom: 50px;
                 }
                 .aboutFirstPart {
-                    font-size: 20px;
-                    font-family: $textFont2;
-                    color: $color2;
-                    margin-bottom: 10px;
+                    font-size: 32px;
                 }
                 .aboutSecondPart {
-                    font-size: 14px;
-                    font-family: $textFont2;
-                    color: $color2;
-                    margin-bottom: 30px;
+                    font-size: 16px;
                 }
                 .contact {
-                    display: flex;
-                    justify-content: center;
+                    justify-content: end;
                     button {
-                        display: flex;
-                        border: solid 1px $color7;
-                        border-radius: 50px;
-                        margin: 2px;
-                        padding: 5px;
-                        background-color: $color7;
-                        color: $color5;
-                        font-size: 10px;
-                        font-family: $textFont2;
-                        text-align: center;
-                        img {
-                            padding-right: 5px;
-                        }
+                        margin-right: 10px;
+                        font-size: 18px;
+                        padding: 12px;
                     }
                 }
             }
         }
         .skillsEducation {
-            padding-top: 100px;
-            margin: auto;
-            color: $color5;
-            text-align: center;
+            width: 75%;
             h2 {
-                font-size: 28px;
-                font-family: $textFont1;
-                font-weight: 400;
+                font-size: 64px;
             }
             h4 {
-                padding:50px 0px 20px 0px;
-                font-size: 15px;
-                font-family: $textFont2;
-                color: $color4;
-                font-weight: 600;
-                span {
-                    color: $color3;
-                }
+                font-size: 18px;
             }
-            .skills {
-                display: flex;
-                justify-content: space-between;
-                .frontSkills, .backSkills, .mobileSkills{
-                    div {
-                        display: flex;
-                        background-color: $color2;
-                        padding: 10px;
-                        margin: 3px;
-                        border-radius: 10px;
-                        span {
-                            padding: 10px;
-                        }
-                    }
+        }
+    }
+}
+
+// Styles spécifiques pour les écrans de téléphone
+@media screen and (max-width: 1200px) {
+    main {
+        .aboutWrap {
+            .about {
+                h2 {
+                    font-size: 18px;
+                    margin-bottom: 20px;
                 }
-            }
-            .educationList, .softSkillsList {
-                div {
-                    display: flex;
-                    background-color: $color2;
-                    padding: 10px;
-                    margin: 3px;
-                    border-radius: 10px;
-                    span {
+                .aboutFirstPart {
+                    font-size: 20px;
+                }
+                .aboutSecondPart {
+                    font-size: 14px;
+                }
+                .contact {
+                    justify-content: center;
+                    button {
+                        width: 50px;
+                        height: 50px;
                         padding: 10px;
+                        margin: 5px;
+                        border-radius: 50%;
                     }
                 }
             }
         }
+        .skillsEducation {
+            h2 {
+                font-size: 28px;
+            }
+            h4 {
+                font-size: 15px;
+            }
+        }
         .contact2 {
-            background: url("../../../pictures/cercle.svg");
-            -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-            background-size: cover;
-            padding-top: 100px;
-            width: 75%;
-            text-align: center;
-            margin: auto;
-            color: $color5;
-            .questions {
-                font-size: 16px;
-                font-family: $textFont2;
-                color:$color4;
-            }
-            .contactMe {
-                font-size: 64px;
-                font-family: $textFont1;
-                color:$color5;
-            }
             .contactChoices {
                 button {
-                    border: solid 2px $color7;
+                    width: 50px;
+                    height: 50px;
                     padding: 10px;
                     margin: 5px;
-                    border-radius: 50px;
-                    background-color: $color2;
-                    color: $color5;
-                    font-size: 18px;
-                    font-family: $textFont2;
-                    text-align: center;
+                    border-radius: 50%;
                 }
             }
         }
     }
+}
+
+// Styles page legal.html
+.mentions {
+    display: flex;
+    justify-content: start;
+}
+.CGU {
+    color: $color5;
 }

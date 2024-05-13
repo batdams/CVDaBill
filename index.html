@@ -8,44 +8,44 @@
     <link rel="icon" type="image/png" href="pictures/DaBill.png">
 </head>
 <body>
-    <header>
-            <nav>
-                <ul class="navMenu">
-                    <div class="home">
-                        <li><a href="index.html"><img src="pictures/DaBill.png" alt="home"></a></li>
-                    </div>
-                    <div class="contactCV">
-                        <li><a href="#">CV</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </div>
-                </ul>
-            </nav>
-            <section>
-                <div class="titleJob">
-                    <div>
-                        <h2 class="name">DAMIEN BILLIAU</h2>
-                        <h1 class="titleDev">Développeur<br>Full-Stack</h1>
-                    </div>
-                    <img src="pictures/illu-section-1.svg" alt="codingPicture">
+    <header class="headerHtml">
+        <nav>
+            <ul class="navMenu">
+                <div class="home">
+                    <li><a href="index.html"><img src="pictures/DaBill.png" alt="home"></a></li>
                 </div>
-            </section>
-            <aside>
-                <p>{Spé : PHP / Symfony} {Disponibilité : Immédiate} {Reconversion} {Travaillons ensemble sur des projets qui font sens}</p>
-            </aside>
+                <div class="contactCV">
+                    <li><a id="dlLink" href="files/CV DaBill.pdf" download="CV Damien Billiau">CV</a></li>
+                    <li><a href="https://github.com/batdams">GitHub</a></li>
+                </div>
+            </ul>
+        </nav>
+        <section>
+            <div class="titleJob">
+                <div>
+                    <h2 class="name">DAMIEN BILLIAU</h2>
+                    <h1 class="titleDev">Développeur<br>Full-Stack</h1>
+                </div>
+                <img src="pictures/illu-section-1.svg" alt="codingPicture">
+            </div>
+        </section>
+        <aside>
+            <p>{Spé : PHP / Symfony} {Disponibilité : Immédiate} {Reconversion} {Travaillons ensemble sur des projets qui font sens}</p>
+        </aside>
     </header>
     <main>
         <div class="aboutWrap">
             <div class="about">
                 <h2>A PROPOS</h2>
                 <div class="aboutFirstPart">
-                    Passionné par le développement web avec une expertise en PHP/Symfony, je suis actuellement en formation pour valider mes compétences dans ce domaine.
+                    Passionné par le développement web avec une expertise en PHP/Symfony, je termine actuellement une formation pour valider mes compétences dans ce domaine.
                 </div>
                 <div class="aboutSecondPart">
                     Mon parcours professionnel précédent en tant que technicien de maintenance en automatisme m'a apporté une base solide en <b>résolution de problèmes et en logique</b>, des compétences essentielles que je mets à profit dans ma transition vers le développement web. Je suis déterminé à élargir mes connaissances et à contribuer de manière significative à des projets passionnants dans le monde du développement web.
                 </div>
                 <div class="contact">
-                    <button><img src="pictures/phone-volume.svg" alt="phone">06 62 67 16 43</button>
-                    <button><img src="pictures/at.svg" alt="email">damienbilliau@gmail.com</button>
+                    <button type="button" class="btnContact btnLink btnCell"><img src="pictures/phone-volume.svg" alt="phone">06 62 67 16 43</button>
+                    <button type="button" class="btnContact btnLink btnMail"><img src="pictures/at.svg" alt="email">damienbilliau@gmail.com</button>
                 </div>
             </div>
         </div>
@@ -104,9 +104,9 @@
             <div class="questions">Des questions ?</div>
             <div class="contactMe"><img src="pictures/photo.png" alt="IDPicture">Contactez moi</div>
             <div class="contactChoices">
-                <button><img src="pictures/phone-volumeGreen.svg" alt="phone">06 62 67 16 43</button>
-                <button><img src="pictures/atGreen.svg" alt="email">damienbilliau@gmail.com</button>
-                <button><img src="pictures/memo-pad.svg" alt="CV">CV</button>
+                <button type="button" class="btnContact btnLink btnCell"><img src="pictures/phone-volumeGreen.svg" alt="phone"> 06 62 67 16 43</button>
+                <button type="button" class="btnContact btnLink btnMail"><img src="pictures/atGreen.svg" alt="email"> damienbilliau@gmail.com</button>
+                <button id="btnCV" type="button" class="btnContact"><img src="pictures/memo-pad.svg" alt="CV"> CV</a></button>
             </div>
         </div>
     </main>
@@ -117,12 +117,13 @@
         </div>
         <div class="footer">
             <h5>LEGAL</h5>
-            <a href="#">CGU & Mentions légales</a>
+            <a href="legal.html">CGU & Mentions légales</a>
         </div>
         <div class="footer">
             <h5>SOCIAL</h5>
-            <a href="#">Linkedin</a>
+            <a href="www.linkedin.com/in/damien-billiau-a8831851">Linkedin</a>
         </div>
     </footer>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

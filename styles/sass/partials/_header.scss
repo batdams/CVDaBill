@@ -94,7 +94,9 @@
 @media screen and (min-width: 1200px) {
     header {
         @include header-styles;
-        min-height: 100vh;
+        .headerHtml {
+            min-height: 100vh;
+        }
         nav {
             @include nav-styles;
         }
