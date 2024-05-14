@@ -315,16 +315,16 @@ main .skillsEducation h4 span {
 }
 main .skillsEducation .skills {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-main .skillsEducation .skills .frontSkills div, main .skillsEducation .skills .backSkills div, main .skillsEducation .skills .mobileSkills div {
+main .skillsEducation .skills .frontSkills div, main .skillsEducation .skills .backSkills div {
   display: flex;
   background-color: #162C2F;
   padding: 10px;
   margin: 3px;
   border-radius: 10px;
 }
-main .skillsEducation .skills .frontSkills div span, main .skillsEducation .skills .backSkills div span, main .skillsEducation .skills .mobileSkills div span {
+main .skillsEducation .skills .frontSkills div span, main .skillsEducation .skills .backSkills div span {
   padding: 10px;
 }
 main .skillsEducation .educationList div, main .skillsEducation .softSkillsList div {
@@ -401,6 +401,9 @@ main .contact2 .contactChoices a img {
   }
   main .skillsEducation {
     width: 75%;
+  }
+  main .skillsEducation .skills .frontSkills, main .skillsEducation .skills .backSkills {
+    display: flex;
   }
   main .skillsEducation h2 {
     font-size: 64px;

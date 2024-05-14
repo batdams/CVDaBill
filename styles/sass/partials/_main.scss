@@ -74,8 +74,8 @@ main {
         }
         .skills {
             display: flex;
-            justify-content: space-between;
-            .frontSkills, .backSkills, .mobileSkills{
+            justify-content: space-evenly;
+            .frontSkills, .backSkills {
                 div {
                     display: flex;
                     background-color: $color2;
@@ -173,6 +173,11 @@ main {
         }
         .skillsEducation {
             width: 75%;
+            .skills {
+                .frontSkills, .backSkills {
+                    display: flex;
+                }
+            }
             h2 {
                 font-size: 64px;
             }
