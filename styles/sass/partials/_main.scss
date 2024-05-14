@@ -37,10 +37,7 @@ main {
             }
             .contact {
                 display: flex;
-                :hover {
-                    cursor: pointer;
-                }
-                button {
+                a {
                     display: flex;
                     border: solid 1px $color7;
                     border-radius: 50px;
@@ -129,7 +126,7 @@ main {
             :hover {
                 cursor: pointer;
             }
-            button {
+            a {
                 display: flex;
                 justify-content: center;
                 border: solid 2px $color7;
@@ -166,7 +163,7 @@ main {
                 }
                 .contact {
                     justify-content: end;
-                    button {
+                    a {
                         margin-right: 10px;
                         font-size: 18px;
                         padding: 12px;
@@ -203,7 +200,7 @@ main {
                 }
                 .contact {
                     justify-content: center;
-                    button {
+                    a {
                         width: 50px;
                         height: 50px;
                         padding: 10px;
@@ -223,7 +220,7 @@ main {
         }
         .contact2 {
             .contactChoices {
-                button {
+                a {
                     width: 50px;
                     height: 50px;
                     padding: 10px;

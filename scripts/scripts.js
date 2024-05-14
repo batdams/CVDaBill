@@ -1,22 +1,62 @@
-// Suppression contenu des boutons taille écran téléphone
+// Suppression contenu des boutons (<1200px>)
 function removeText () {
-    let btnContact = document.getElementsByClassName('btnContact');
-    if (window.matchMedia('(max-width: 1200px)').matches) {
-        for (let element of btnContact) {
-            element.childNodes[1].nodeValue = ' ';
-        }
+    let btnContacts = document.getElementsByClassName('btnContact');
+    for (let element of btnContacts) {
+        element.childNodes[1].nodeValue = ' ';
     }
 }
 
-window.onload = removeText;
-window.onresize = removeText;
+// øchargement balises <a> et copie du contenu de la balise (>1200px)
+function setCopy () {
+    let btnLinks = document.getElementsByClassName('btnLink');
+    for (let element of btnLinks) {
+        element.addEventListener('click', (event) => {event.preventDefault()});
+        element.setAttribute("title", "cliquez pour copier");
+        let text = element.childNodes[1].textContent;
+        element.addEventListener('click', () => {
+            navigator.clipboard.writeText(text);
+            console.log("contenu copié : " + text);
+            element.childNodes[1].nodeValue = 'Copié';
+            setTimeout(() => {
+                element.childNodes[1].nodeValue = text;
+            }, 1000);
+        });
+    }
+}
 
-// Ajout du CV au bouton CV
-let btnCV = document.getElementById('btnCV');
-btnCV.addEventListener('click', () => {document.getElementById('dlLink').click()});
+function addText () {
+    let btnCells = document.getElementsByClassName('btnCell');
+    let btnMails = document.getElementsByClassName('btnMail');
+    for (let element of btnCells) {
+        element.childNodes[1].nodeValue = ' 06 62 67 16 43';
+    }
+    for (let element of btnMails) {
+        element.childNodes[1].nodeValue = ' damienbilliau@gmail.com';
+    }
+}
 
-// Attribution des éléments aux boutons de contact Format téléphone
-const mql = window.matchMedia('(max-width: 1200px)');
+// Comportement suivant le format
+const mqlMax = window.matchMedia('(max-width: 1200px)');
+const mqlMin = window.matchMedia('(min-width: 1200px)');
+function checkAndAdjust () {
+    if (mqlMax.matches) {
+        removeText();
+    }
+    else if (mqlMin.matches){
+        addText();
+        setCopy();
+    }
+}
+window.onload = checkAndAdjust;
+window.onresize = checkAndAdjust;
+
+
+// Ajout du CV au bouton CV (OLD)
+/*  let btnCV = document.getElementById('btnCV');
+    btnCV.addEventListener('click', () => {document.getElementById('dlLink').click()}); */
+
+    // Attribution des éléments aux boutons de contact Format téléphone
+/*const mql = window.matchMedia('(max-width: 1200px)');
 
 function setCall () {
     let btnCell = document.getElementsByClassName('btnCell');
@@ -37,26 +77,4 @@ function setMail () {
 }
 
 mql.addEventListener("change", setCall);
-mql.addEventListener("change", setMail);
-
-
-// Attribution des éléments aux boutons de contact format Ordinateur
-const mqlMax = window.matchMedia('(min-width: 1200px)');
-function setCopy () {
-    let btnLink = document.getElementsByClassName('btnLink');
-    if (mqlMax.matches) {
-        for (let element of btnLink) {
-            element.setAttribute("title", "cliquez pour copier");
-            let text = element.childNodes[1].textContent;
-            element.addEventListener('click', () => {
-                navigator.clipboard.writeText(text);
-                console.log("contenu copié : " + text);
-                element.childNodes[1].nodeValue = 'Copié';
-                setTimeout(() => {
-                    element.childNodes[1].nodeValue = text;
-                }, 1000);
-            });
-        }
-    }
-}
-setCopy();
+mql.addEventListener("change", setMail);*/
