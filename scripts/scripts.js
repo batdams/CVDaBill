@@ -10,17 +10,20 @@ function removeText () {
 function setCopy () {
     let btnLinks = document.getElementsByClassName('btnLink');
     for (let element of btnLinks) {
-        element.addEventListener('click', (event) => {event.preventDefault()});
-        element.setAttribute("title", "cliquez pour copier");
-        let text = element.childNodes[1].textContent;
-        element.addEventListener('click', () => {
-            navigator.clipboard.writeText(text);
-            console.log("contenu copié : " + text);
-            element.childNodes[1].nodeValue = 'Copié';
-            setTimeout(() => {
-                element.childNodes[1].nodeValue = text;
-            }, 1000);
+        element.addEventListener('click', (event) => {
+            event.preventDefault();
+            let text = element.childNodes[1].textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                console.log("contenu copié : " + text);
+                element.childNodes[1].nodeValue = 'Copié';
+                setTimeout(() => {
+                    element.childNodes[1].nodeValue = text;
+                }, 1000);
+            }).catch(err => {
+            console.log('Erreur lors de la copie dans le presse papier : ', err);
+            });
         });
+        element.setAttribute("title", "cliquez pour copier");
     }
 }
 
