@@ -52,7 +52,7 @@ function checkAndAdjust () {
 }
 window.onload = checkAndAdjust;
 window.onresize = checkAndAdjust;
-
+document.addEventListener('fullscreenchange', checkAndAdjust);
 
 // Ajout du CV au bouton CV (OLD)
 /*  let btnCV = document.getElementById('btnCV');
